@@ -92,9 +92,9 @@ WSGI_APPLICATION = "Learntest.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangolearntest',
+        'NAME': 'djangoDataBase',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': '640188',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }

@@ -16,12 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app01 import views
-from app01.srcs.views import departments, myadmin, number, user, account, task, order
+from app01.srcs.views import departments, myadmin, number, user, account, task, order,allkindscode
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index),
     path("dbop", views.dbop),
+
+    path("allkindscode/management", allkindscode.test_add),
+    path("allkindscode/add", allkindscode.add_product_code),
+    path("allkindscode/management", allkindscode.test_add),
+    path("allkindscode/management", allkindscode.test_add),
+    path("allkindscode/management", allkindscode.test_add),
 
     path("depart/list", departments.depart_list),
     path("depart/add", departments.depart_add),
